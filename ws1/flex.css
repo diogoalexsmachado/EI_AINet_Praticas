@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+
+.box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+.main-menu {
+    background-color: magenta;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline;
+}
+
+article {
+    background-color: darkgray;
+    box-sizing: border-box;
+    flex-basis: 60%;
+}
+
+section {
+    background-color: lightgray;
+}
+
+aside {
+    background-color: lightblue;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.main-content {
+    display:  flex;
+}

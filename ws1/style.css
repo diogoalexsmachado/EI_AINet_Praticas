@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+
+.box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+.main-menu {
+    background-color: magenta;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline;
+}
+
+article {
+    background-color: darkgray;
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: lightgray;
+}
+
+aside {
+    background-color: lightblue;
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.main-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}

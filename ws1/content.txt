@@ -1,0 +1,21 @@
+Page Header
+
+Navigational menu: Go To Page 1 | Go To Page 2 | Go To Page 3 |
+
+Title of Article 1
+
+Content of Article 1
+
+Title of Section 1 of Article 1
+
+Content of Section 1 of Article 1
+
+Title of Section 2 of Article 1
+
+Content of Section 2 of Article 1
+
+Aside header
+
+Content tangentially related to articles in page
+
+Page Footer
