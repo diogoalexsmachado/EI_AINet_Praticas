@@ -35,4 +35,27 @@ function times_table_view(){
     echo "</table>";    
 }
 
+
+function prime_numbers($n){
+    $array = [];
+    for($i=0;$i<=$n;$i++){
+        if(!($i%2==0 || $i%3==0)){
+        array_push($array,$i);
+        }elseif($i==2){
+            array_push($array,$i);
+        }
+    }
+    return $array;
+}
+
+function prime_numbers_view($n){
+    $array=prime_numbers($n);
+    foreach($array as $key => $prime){
+        echo $prime;
+        if (next($array)==true) {
+            echo ", ";
+        }
+    }
+}
+
 ?>
