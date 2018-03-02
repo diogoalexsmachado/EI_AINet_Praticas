@@ -10,7 +10,7 @@
         <h2>Exercise 4</h2>
         <?php
             include  "functions.php";
-            mistery_sentence();
+            echo mistery_sentence();
         ?>
 
     </body>

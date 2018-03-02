@@ -25,7 +25,7 @@ function prime_numbers($n){
     $array = [];
     for($i=0;$i<=$n;$i++){
         if(!($i%2==0 || $i%3==0)){
-        array_push($array,$i);
+            array_push($array,$i);
         }elseif($i==2){
             array_push($array,$i);
         }
@@ -49,7 +49,17 @@ function mistery_sentence(){
     $pos_verbs = rand(1,count($verbs))-1;
     $pos_objects = rand(1,count($objects))-1;
 
-    echo ucfirst($nouns[$pos_nouns]." ".$verbs[$pos_verbs]." ".$objects[$pos_objects]);
+    //echo ucfirst($nouns[$pos_nouns]." ".$verbs[$pos_verbs]." ".$objects[$pos_objects]);
+    return ucfirst($nouns[$pos_nouns]." ".$verbs[$pos_verbs]." ".$objects[$pos_objects]);
 } 
+
+function letterHistogram(){
+    $sentence = mistery_sentence();
+    echo $sentence."<br><br><table>";
+    foreach (count_chars($sentence, 1) as $key => $value) {//                       --------------
+        echo "<tr><td>".chr($key)."</td><td>".$value."</td></tr>"; //Add line with | CHAR | COUNT |
+    }//                                                                             --------------
+    echo "</table>";
+}
 
 ?>
