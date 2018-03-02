@@ -1,38 +1,23 @@
 <?php
-
 function times_table_view(){
     $isEqual = false;
-    echo "<table>";     
-    echo "<tr>";
-    echo "<td class='first'>"; 
-    echo "*";
-    echo "</td>";
-    for($b=1; $b<11;$b++){
-        echo "<td class='first'>"; 
-        echo $b;
-        echo "</td>";
+    echo "<table><tr><td class='first'>*</td>";
+    for($b=1; $b<11;$b++){ //Draw first line of numbers
+        echo "<td class='first'>".$b."</td>";
     }
     echo "</tr>";
     for($i = 1; $i < 11; $i++) {
-        echo "<tr>";
-        
-        echo "<td class='first'>"; 
-        echo $i;
-        echo "</td>";
+        echo "<tr><td class='first'>".$i."</td>"; //Draw the number of first column of numbers
         for($a = 1; $a < 11; $a++) {
             if($a==$i){
-                echo "<td class='equal'>"; 
-                echo $a*$i;
-                echo "</td>";
+                echo "<td class='equal'>".$a*$i."</td>"; //Return multiplication with stronger color
             }else{
-                echo "<td>"; 
-                echo $a*$i;
-                echo "</td>";
+                echo "<td>".$a*$i."</td>";//Return multiplication
             }
         }
     echo "</tr>";
     }
-    echo "</table>";    
+    echo "</table>"; //Close table
 }
 
 
