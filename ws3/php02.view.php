@@ -12,24 +12,24 @@
     <h1>Exercise 2</h1>
     <p>Go to <a href="index.html">index</a></p>
     <hr>
-    <form XXXXX>
+    <form action="php02.php" method="get">
         <div>
             <label>Lines</label>
-            <input XXXXX>
+            <input type="number" min="1" max="100" id="lines_ID" name="lines">
         </div>
         <div>
             <label>Columns</label>
-            <input XXXXX>
+            <input type="number" min="1" max="100" id="columns_ID" name="columns">
         </div>
         <div>
-            <input XXXXX>
+            <input type="submit">
         </div>
-    </form>
+    </form> 
     <hr>
     <ul class="shortcuts">
-        <li><a href="XXXXX">4 x 4</a></li>
-        <li><a href="XXXXX">5 x 10</a></li>
-        <li><a href="XXXXX">10 x 10</a></li>
+        <li><a href="?lines=4&columns=4">4 x 4</a></li>
+        <li><a href="?lines=5&columns=10">5 x 10</a></li>
+        <li><a href="?lines=10&columns=10">10 x 10</a></li>
     </ul>
     <hr>
         <!-- XXXXX Add php code to "draw" (call times_table_view) the numbers table -->
