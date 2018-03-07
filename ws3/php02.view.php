@@ -12,7 +12,7 @@
     <h1>Exercise 2</h1>
     <p>Go to <a href="index.html">index</a></p>
     <hr>
-    <form action="php02.php" method="get">
+    <form action="php02.php">
         <div>
             <label>Lines</label>
             <input type="number" min="1" max="100" id="lines_ID" name="lines">
@@ -32,6 +32,10 @@
         <li><a href="?lines=10&columns=10">10 x 10</a></li>
     </ul>
     <hr>
-        <!-- XXXXX Add php code to "draw" (call times_table_view) the numbers table -->
+        <?php
+            if($lines>0 && $columns >0){
+                echo times_table_view($lines,$columns);
+            }
+        ?>
 </body>
 </html>

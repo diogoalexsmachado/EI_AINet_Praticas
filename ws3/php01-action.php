@@ -1,5 +1,7 @@
 <?php
     require_once('html_helpers.php');
+    $lines = $_GET["lines"]?: 10;
+    $columns = $_GET["columns"]?:10;
 ?>
 <!doctype html>
 <html>
@@ -11,6 +13,6 @@
 
     <body>
         <h1>Numbers Table</h1>
-        <?= times_table_view( $_GET["lines"], $_GET["columns"]) ?>
+        <?= times_table_view( $lines, $columns) ?>
     </body>
 </html>
