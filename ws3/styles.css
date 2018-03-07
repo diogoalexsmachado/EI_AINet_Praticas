@@ -1,0 +1,75 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    width:2em;
+    height:2em;
+    text-align: center;
+    vertical-align: middle;
+    color:#fff;
+}
+
+td {
+    background-color: red;
+}
+
+th {
+    font-weight: normal;
+    background-color: #8F0000;
+}
+
+.diag {
+    background-color: #5C0000
+}
+
+form div {
+	margin-top: 10px;
+	height: 20	px;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+input {
+	width: 120px;
+}
+
+select {
+	width: 126px;
+}
+
+input[type="submit"] {
+	margin-top: 5px;
+	width: 160px;
+	margin-left: 90px;
+}
+
+table{
+	margin-top: 15px;
+}
+
+p.error {
+ 	display: inline-block;
+	margin: 0;
+	color: red;
+}
+
+.shortcuts {
+    list-style-type: none;
+}
+
+.shortcuts li {
+    display: inline;
+}
+
+.shortcuts li:not(:first-child):before {
+    content: '|';
+    display:  inline;
+    padding: 1em;
+}
