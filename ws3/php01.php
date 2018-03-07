@@ -12,11 +12,11 @@
     <form action="php01-action.php" method="get">
         <div>
             <label>Lines</label>
-            <input type="number" id="lines_ID" name="lines">
+            <input type="number" min="1" max="100" id="lines_ID" name="lines">
         </div>
         <div>
             <label>Columns</label>
-            <input type="number" id="columns_ID" name="columns">
+            <input type="number" min="1" max="100" id="columns_ID" name="columns">
         </div>
         <div>
             <input type="submit">

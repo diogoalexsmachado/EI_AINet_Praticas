@@ -11,6 +11,6 @@
 
     <body>
         <h1>Numbers Table</h1>
-        <?= times_table_view( $_GET["lines"] ?: null, $_GET["columns"] ?: null) ?>
+        <?= times_table_view( $_GET["lines"], $_GET["columns"]) ?>
     </body>
 </html>
