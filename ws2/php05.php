@@ -1,3 +1,7 @@
+<?php
+    require_once('functions.php');
+    require_once('sentences.php');
+?>
 <!doctype html>
 
 <html lang="en">
@@ -14,10 +18,7 @@ td { width:35px; height:35px; text-align: center; border: 1px solid black;}
 
     <body>
         <h2>Exercise 5</h2>
-        <?php
-            include  "functions.php";
-            letterHistogram();
-        ?>
+        <?= letterHistogram($nouns, $verbs, $objects) ?>
 
     </body>
 

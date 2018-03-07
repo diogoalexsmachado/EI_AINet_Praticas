@@ -1,3 +1,7 @@
+<?php
+    require_once('functions.php');
+    require_once('sentences.php');
+?>
 <!doctype html>
 
 <html lang="en">
@@ -8,10 +12,7 @@
 
     <body>
         <h2>Exercise 4</h2>
-        <?php
-            include  "functions.php";
-            echo mistery_sentence();
-        ?>
+        <?= mistery_sentence($nouns, $verbs, $objects);?>
 
     </body>
 

@@ -43,18 +43,16 @@ function prime_numbers_view($n){
     }
 }
 
-function mistery_sentence(){
-    include "sentences.php";
+function mistery_sentence($nouns, $verbs, $objects){
     $pos_nouns = rand(1,count($nouns))-1;
     $pos_verbs = rand(1,count($verbs))-1;
     $pos_objects = rand(1,count($objects))-1;
 
-    //echo ucfirst($nouns[$pos_nouns]." ".$verbs[$pos_verbs]." ".$objects[$pos_objects]);
     return ucfirst($nouns[$pos_nouns]." ".$verbs[$pos_verbs]." ".$objects[$pos_objects]);
 } 
 
-function letterHistogram(){
-    $sentence = mistery_sentence();
+function letterHistogram($nouns, $verbs, $objects){
+    $sentence = mistery_sentence($nouns, $verbs, $objects);
     echo $sentence."<br><br><table>";
     foreach (count_chars($sentence, 1) as $key => $value) {//                       --------------
         echo "<tr><td>".chr($key)."</td><td>".$value."</td></tr>"; //Add line with | CHAR | COUNT |
