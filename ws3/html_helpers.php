@@ -1,6 +1,9 @@
 <?php
-function times_table_view($lines = 10, $cols = 10, $operation = '*')
+function times_table_view($lines, $cols, $operation = '*')
 {
+    if($lines == '') { $lines = 10; } //added to check if param is empty
+    if($cols == '')  { $cols = 10; } //added to check if param is empty
+
     $html = "\n<table>";
     $html.= "\n<thead>";
     $html.= "\n<tr>\n    ";
