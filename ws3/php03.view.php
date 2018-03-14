@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Exercise 2</h1>
+    <h1>Exercise 3</h1>
     <p>Go to <a href="index.html">index</a></p>
     <hr>
     <form action="php03.php">
