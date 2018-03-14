@@ -12,7 +12,7 @@
     <h1>Exercise 2</h1>
     <p>Go to <a href="index.html">index</a></p>
     <hr>
-    <form action="php03.php">
+    <form action="php04.php" method="post">
         <div>
             <label>Lines</label>
             <input type="number" min="1" max="500" id="lines_ID" name="lines" value='<?= $lines ?>'>
