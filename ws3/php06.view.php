@@ -15,7 +15,7 @@
     <form action="php06.php" id="form_principal" method="post">
         <div>
             <label>Lines</label>
-            <input type="number" min="1" max="200" id="lines_ID" name="lines" value='<?= $lines ?>'> 
+            <input type="number" min="1" max="20" id="lines_ID" name="lines" value='<?= $lines ?>'> 
             <?= show_error($errors, 'lines') ?>        
         </div>
         <div>

@@ -15,11 +15,11 @@
     <form action="php04.php" method="post" id="form_principal">
         <div>
             <label>Lines</label>
-            <input type="number" min="1" max="500" id="lines_ID" name="lines" value='<?= $lines ?>'>
+            <input type="number" min="1" max="20" id="lines_ID" name="lines" value='<?= $lines ?>'>
         </div>
         <div>
             <label>Columns</label>
-            <input type="number" min="1" max="500" id="columns_ID" name="columns" value='<?= $columns ?>'>
+            <input type="number" min="1" max="20" id="columns_ID" name="columns" value='<?= $columns ?>'>
         </div>
         <div>
             <label>Operation</label>
