@@ -41,3 +41,20 @@ function compute($operand1, $operand2, $operator)
             return 0;
     }
 }
+
+// Dump and die - used for debugging
+function dd($mixed)
+{
+    echo '<pre>';
+    var_dump($mixed);
+    echo '</pre>';
+    die('DEBUG');
+}
+
+function show_error($errors, $field)
+{
+    if (isset($errors[$field])) {
+        $message = $errors[$field];
+        include('error.partial-view.php');
+    }
+}
