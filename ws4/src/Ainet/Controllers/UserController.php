@@ -49,7 +49,7 @@ class UserController
         if (!trim($user->fullname))
             $errors['fullname'] = "Full name is required";
         elseif (!preg_match("/^[a-zA-Z ]*$/",$user->fullname)) 
-            $errors['fullname'] = "Only letters and white space allowed"; 
+            $errors['fullname'] = "Only letters and white space are allowed on full name"; 
         
 
         if(is_null($user->user_type))
